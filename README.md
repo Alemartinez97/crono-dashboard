@@ -21,7 +21,7 @@ npm --version
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Alemartinez97/crono-dashboard.git
    cd crono-dashboard
    ```
 
@@ -91,7 +91,7 @@ Run tests with a coverage report:
 npm run test:coverage
 ```
 
-Tests live alongside the code they cover, inside `__tests__` folders (e.g. [src/hooks/__tests__/](src/hooks/__tests__/), [src/store/slices/__tests__/](src/store/slices/__tests__/)). Shared testing helpers such as `renderWithProviders` — which wraps components with Redux and TanStack Query providers — are available in [src/test-utils/renderWithProviders.tsx](src/test-utils/renderWithProviders.tsx).
+Tests live alongside the code they cover, inside `__tests__` folders (e.g. [src/hooks/__tests__/](src/hooks/__tests__/), [src/store/slices/__tests__/](src/store/slices/__tests__/)). Shared helpers like `renderWithProviders`, which wraps components with Redux and TanStack Query providers, live in [src/test-utils/renderWithProviders.tsx](src/test-utils/renderWithProviders.tsx).
 
 ## Project structure
 
