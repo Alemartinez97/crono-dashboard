@@ -22,9 +22,11 @@ export function ActionMenu({
   useEffect(() => {
     if (!open) return
     function handleClick(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        onClose()
-      }
+      const target = e.target as HTMLElement | null
+      if (!target) return
+      if (ref.current && ref.current.contains(target)) return
+      if (target.closest('[data-testid="signal-action-button"]')) return
+      onClose()
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)

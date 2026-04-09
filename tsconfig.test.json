@@ -1,18 +1,21 @@
 {
   "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.test.tsbuildinfo",
     "target": "es2022",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "node10",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
     "jsx": "react-jsx",
     "strict": true,
+    "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["jest", "node", "@testing-library/jest-dom"],
-    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "types": ["jest", "node", "@testing-library/jest-dom", "vite/client"],
     "paths": {
       "@/*": ["./src/*"]
     }

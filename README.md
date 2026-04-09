@@ -69,6 +69,30 @@ Run ESLint across the project:
 npm run lint
 ```
 
+### Tests
+
+The project uses **Jest** with **React Testing Library** for unit and integration tests.
+
+Run the full test suite:
+
+```bash
+npm test
+```
+
+Run tests in watch mode (re-runs on file changes):
+
+```bash
+npm run test:watch
+```
+
+Run tests with a coverage report:
+
+```bash
+npm run test:coverage
+```
+
+Tests live alongside the code they cover, inside `__tests__` folders (e.g. [src/hooks/__tests__/](src/hooks/__tests__/), [src/store/slices/__tests__/](src/store/slices/__tests__/)). Shared testing helpers such as `renderWithProviders` — which wraps components with Redux and TanStack Query providers — are available in [src/test-utils/renderWithProviders.tsx](src/test-utils/renderWithProviders.tsx).
+
 ## Project structure
 
 ```
@@ -83,6 +107,7 @@ crono-dashboard/
 │   ├── providers/       # Context providers
 │   ├── store/           # Redux store and slices
 │   ├── styles/          # Global styles
+│   ├── test-utils/      # Shared testing helpers (providers, render)
 │   ├── types/           # TypeScript types
 │   ├── utils/           # Utility functions
 │   ├── App.tsx          # Root component
@@ -101,6 +126,7 @@ crono-dashboard/
 - [Redux Toolkit](https://redux-toolkit.js.org/) + [React Redux](https://react-redux.js.org/) for global state
 - [TanStack Query](https://tanstack.com/query) and [SWR](https://swr.vercel.app/) for data fetching
 - [Lucide React](https://lucide.dev/) for icons
+- [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing
 
 ## Import alias
 
