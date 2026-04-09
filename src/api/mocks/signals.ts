@@ -1,0 +1,51 @@
+import type { Signal } from '@/types/dashboard'
+
+export const mockSignals: Signal[] = [
+  {
+    id: 'sig_001',
+    type: 'role_change',
+    headline: 'Robert Smith changed role from SDR to Senior SDR at WeRoad',
+    tag: 'Role change',
+    secondaryTag: 'In sequence',
+    occurredAt: '2025-04-02T09:00:00Z',
+    avatarUrl: 'https://api.dicebear.com/7.x/identicon/svg?seed=robert',
+    status: 'new',
+  },
+  {
+    id: 'sig_002',
+    type: 'company_change',
+    headline: 'Robert Smith changed role from SDR to Senior SDR at WeRoad',
+    tag: 'Company change',
+    secondaryTag: 'In sequence',
+    occurredAt: '2025-04-02T09:30:00Z',
+    avatarUrl: 'https://api.dicebear.com/7.x/identicon/svg?seed=robert',
+    status: 'new',
+  },
+  {
+    id: 'sig_003',
+    type: 'role_change',
+    headline: 'Robert Smith changed role from SDR to Senior SDR at WeRoad',
+    tag: 'Role change',
+    occurredAt: '2025-04-02T11:00:00Z',
+    avatarUrl: 'https://api.dicebear.com/7.x/identicon/svg?seed=robert',
+    status: 'new',
+  },
+  {
+    id: 'sig_004',
+    type: 'website_view',
+    headline: 'Amazon viewed 2 pages of your website for 65 sec',
+    tag: 'Website view',
+    occurredAt: '2025-04-02T13:00:00Z',
+    avatarUrl: 'https://api.dicebear.com/7.x/identicon/svg?seed=amazon',
+    status: 'new',
+  },
+  {
+    id: 'sig_005',
+    type: 'website_view',
+    headline: 'Amazon viewed 2 pages of your website for 65 sec',
+    tag: 'Website view',
+    occurredAt: '2025-04-02T14:00:00Z',
+    avatarUrl: 'https://api.dicebear.com/7.x/identicon/svg?seed=amazon',
+    status: 'new',
+  },
+]
